@@ -1,4 +1,6 @@
-
+body.text-center {
+   background-color: #007A93;
+}
 
 
 #city-input, #weather-output {
