@@ -16,3 +16,11 @@ searchCity = async () => {
     showWeatherData(data);
   }
   
+  showWeatherData = (weatherData) => {
+    document.getElementById('city-name').innerText = weatherData.name;
+    document.getElementById('weather-type').innerText = weatherData.weather[0].main;
+    document.getElementById('temp').innerText = weatherData.main.temp;
+    document.getElementById('min-temp').innerText = weatherData.main.temp_min;
+    document.getElementById('max-temp').innerText = weatherData.main.temp_max;
+     
+   }
