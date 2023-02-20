@@ -7,3 +7,12 @@ getWeatherData = (city) => {
     .then(response => response.json())
     .then(data => data) 
 }
+
+searchCity = async () => {
+    const city = document.getElementById('city-input').value;
+    console.log(city);
+  
+    const data  = await getWeatherData(city);
+    showWeatherData(data);
+  }
+  
